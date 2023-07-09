@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "main.css">
+</head>
+<body class = "flex">
+  
+    <div class = "wrapper">
+        <div class = "quiz-container">
+            <div class = "quiz-head">
+                <h1 class = "quiz-title">Proyecto Trivia<h1>
+
+                <select id = "nivel" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option value="easy">Bajo</option>
+                    <option value="medium">Medio</option>
+                    <option value="hard">Alto</option>
+                </select>
+               
+                <div class = "quiz-score flex">
+                    <span id = "correct-score"> <!-- 0 --> </span>/<span id = 
+                    "total-question"> <!--10 --> </span>
+                </div>
+            </div>
+
+            <div class = "quiz-body">
+                <h2 class = "quiz-question" id = "question"> <!-- What is the full form of HTTP? --> <!-- <br> <span class = "category">Geography</span>--></h2>
+                <ul class = "quiz-options">
+                    <!-- <li>1. Hyper text transfer package</li> -->
+                    <!-- <li>1. Hyper text transfer package</li> -->
+                    <!-- <li>1. Hyper text transfer package</li> -->
+                    <!-- <li>1. Hyper text transfer package</li> -->                
+                </ul>
+                <div id = "result">
+              
+                </div>
+            </div>
+
+            <div class = "quiz-foot">
+                <button type = "button" id = "check-answer">Verificar respuesta</button>
+                <button type = "button" id = "play-again">Jugar nuevamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
